@@ -1,0 +1,612 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+img.header{
+    width: 1263px;
+    height: 160px;
+    position: fixed;
+    z-index: 1000;
+}
+
+.navbar{
+    max-width: 1250px;
+    padding: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    background-color: #BDAC92;
+    margin-right: -5px;
+    margin-top: 155px;
+    height: 1px;
+    position: fixed;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.navbar ul li {
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: white;
+    color: #000;
+    border-radius: 5px;
+}
+
+.navbar ul li.active a {
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+}
+
+.navbar ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    max-height: 200px; /* Agar dropdown bisa di-scroll jika terlalu panjang */
+}
+
+.navbar ul li .dropdown-content li {
+    display: block;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar ul li .dropdown-content li a {
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.navbar ul li .dropdown-content li a:hover {
+    background-color: #555;
+}
+
+.navbar ul li:hover .dropdown-content {
+    display: block;
+    top: 100%;
+    left: 0;
+}
+
+#pelaksanaan{
+    background-color: #BDAC92;
+    padding-top: 25px;
+    padding-left: 30px;
+    color: black;
+    font-size: 25px;
+    padding-top: 240px;
+}
+
+p.isi{
+    font-size: 20px;
+    padding-top: 15px;
+    padding-left: 60px;
+    padding-right: 30px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+    background-color: #BDAC92;
+}
+
+p.minuman{
+    font-size: 25px;
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 500px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+    background-color: #BDAC92;
+}
+
+p.isatu{
+    font-size: 20px;
+    padding-left: 60px;
+    padding-right: 30px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+}
+
+ul.idua{
+    font-size: 20px;
+    padding-left: 90px;
+    padding-right: 30px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+}
+
+p.itiga{
+    font-size: 20px;
+    padding-left: 60px;
+    padding-right: 30px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+}
+
+p.makanan{
+    font-size: 25px;
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 500px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+    background-color: #BDAC92;
+}
+
+p.asatu{
+    font-size: 20px;
+    padding-left: 60px;
+    padding-right: 650px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+}
+
+ul.adua{
+    font-size: 20px;
+    padding-left: 90px;
+    padding-right: 650px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+}
+
+p.atiga{
+    font-size: 20px;
+    padding-left: 60px;
+    padding-right: 650px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+}
+
+p.produk{
+    font-size: 25px;
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 500px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+    background-color: #BDAC92;
+}
+
+p.psatu{
+    font-size: 20px;
+    padding-left: 60px;
+    padding-right: 650px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+}
+
+ul.pdua{
+    font-size: 20px;
+    padding-left: 90px;
+    padding-right: 650px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+}
+
+p.ptiga{
+    font-size: 20px;
+    padding-left: 60px;
+    padding-right: 650px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+}
+
+p.pempat{
+    font-size: 20px;
+    padding-left: 60px;
+    padding-right: 650px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+}
+
+img.timeline{
+    height: 1000px;
+    width: 600px;
+    margin-left: 600px;
+    margin-top: -7000px;
+    margin-bottom: 80px;
+}
+
+#keuangan{
+    background-color: #BDAC92;
+    padding-left: 30px;
+    color: black;
+    font-size: 25px;
+    padding-top: 240px;
+    margin-top: -200px;
+}
+
+#statisika{
+    background-color: #BDAC92;
+    padding-left: 30px;
+    color: black;
+    font-size: 25px;
+    padding-top: 50px;
+}
+
+p.satu{
+    font-size: 25px;
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 500px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+    background-color: #BDAC92;
+}
+
+p.dua{
+    font-size: 25px;
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 500px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+    background-color: #BDAC92;
+}
+
+p.tiga{
+    font-size: 25px;
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 500px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+    background-color: #BDAC92;
+}
+
+p.empat{
+    font-size: 25px;
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 500px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+    background-color: #BDAC92;
+}
+
+p.lima{
+    font-size: 25px;
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 500px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+    background-color: #BDAC92;
+}
+
+p.enam{
+    font-size: 25px;
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 500px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+    background-color: #BDAC92;
+}
+
+p.tujuh{
+    font-size: 25px;
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 500px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+    background-color: #BDAC92;
+}
+
+p.delapan{
+    font-size: 25px;
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 500px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+    background-color: #BDAC92;
+}
+
+p.sembilan{
+    font-size: 25px;
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 500px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+    background-color: #BDAC92;
+}
+
+p.sepuluh{
+    font-size: 25px;
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 500px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+    background-color: #BDAC92;
+}
+
+#refleksi{
+    background-color: #BDAC92;
+    padding-top: 25px;
+    padding-left: 30px;
+    color: black;
+    font-size: 25px;
+    padding-top: 40px;
+}
+
+p.agamaa{
+    font-size: 20px;
+    padding-top: 15px;
+    padding-left: 60px;
+    padding-right: 30px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+    background-color: #BDAC92;
+}
+
+p.agamab{
+    font-size: 20px;
+    padding-top: 15px;
+    padding-left: 60px;
+    padding-right: 30px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+    background-color: #BDAC92;
+}
+
+p.agamac{
+    font-size: 20px;
+    padding-top: 15px;
+    padding-left: 60px;
+    padding-right: 30px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+    background-color: #BDAC92;
+}
+
+p.agamad{
+    font-size: 20px;
+    padding-top: 15px;
+    padding-left: 60px;
+    padding-right: 30px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+    background-color: #BDAC92;
+}
+
+p.agamae{
+    font-size: 20px;
+    padding-top: 15px;
+    padding-left: 60px;
+    padding-right: 30px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+    background-color: #BDAC92;
+}
+
+#video{
+    background-color: #BDAC92;
+    padding-top: 25px;
+    padding-left: 30px;
+    color: black;
+    font-size: 25px;
+    padding-top: 50px;
+}
+
+#procedure{
+    background-color: #BDAC92;
+    padding-top: 25px;
+    padding-left: 30px;
+    color: black;
+    font-size: 25px;
+    padding-top: 50px;
+}
+
+p.sabun{
+    font-size: 25px;
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 500px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+    background-color: #BDAC92;
+}
+
+p.asabun{
+    font-size: 20px;
+    padding-left: 60px;
+    padding-top: 10px;
+    padding-right: 500px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+    background-color: #BDAC92;
+}
+
+ul.bsabun{
+    font-size: 20px;
+    padding-left: 80px;
+    padding-right: 500px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+    background-color: #BDAC92;
+}
+
+p.csabun{
+    font-size: 20px;
+    padding-left: 60px;
+    padding-top: 10px;
+    padding-right: 500px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+    background-color: #BDAC92;
+}
+
+ul.dsabun{
+    font-size: 20px;
+    padding-left: 80px;
+    padding-right: 500px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+    background-color: #BDAC92;
+}
+
+p.esabun{
+    font-size: 20px;
+    padding-left: 60px;
+    padding-top: 10px;
+    padding-right: 500px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+    background-color: #BDAC92;
+}
+
+ol.fsabun{
+    font-size: 20px;
+    padding-left: 80px;
+    padding-right: 30px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+    background-color: #BDAC92;
+}
+
+p.pita{
+    font-size: 25px;
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-right: 500px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+    background-color: #BDAC92;
+}
+
+p.apita{
+    font-size: 20px;
+    padding-left: 60px;
+    padding-top: 10px;
+    padding-right: 500px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+    background-color: #BDAC92;
+}
+
+ul.bpita{
+    font-size: 20px;
+    padding-left: 80px;
+    padding-right: 500px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+    background-color: #BDAC92;
+}
+
+p.cpita{
+    font-size: 20px;
+    padding-left: 60px;
+    padding-top: 10px;
+    padding-right: 500px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+    background-color: #BDAC92;
+}
+
+ul.dpita{
+    font-size: 20px;
+    padding-left: 80px;
+    padding-right: 500px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+    background-color: #BDAC92;
+}
+
+p.epita{
+    font-size: 20px;
+    padding-left: 60px;
+    padding-top: 10px;
+    padding-right: 500px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+    background-color: #BDAC92;
+}
+
+ol.fpita{
+    font-size: 20px;
+    padding-left: 80px;
+    padding-right: 30px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+    background-color: #BDAC92;
+}
+
+img{
+    transition: transform 0.5s ease-in-out
+}
+
+img:hover{
+    transform: translateY(-8px);
+}

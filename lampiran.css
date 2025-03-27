@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+img.header{
+    width: 1263px;
+    height: 160px;
+    position: fixed;
+    z-index: 1000;
+}
+
+.navbar{
+    max-width: 1250px;
+    padding: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    background-color: #BDAC92;
+    margin-right: -5px;
+    margin-top: 155px;
+    height: 1px;
+    position: fixed;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.navbar ul li {
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: white;
+    color: #000;
+    border-radius: 5px;
+}
+
+.navbar ul li.active a {
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+}
+
+.navbar ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    max-height: 200px; /* Agar dropdown bisa di-scroll jika terlalu panjang */
+}
+
+.navbar ul li .dropdown-content li {
+    display: block;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar ul li .dropdown-content li a {
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.navbar ul li .dropdown-content li a:hover {
+    background-color: #555;
+}
+
+.navbar ul li:hover .dropdown-content {
+    display: block;
+    top: 100%;
+    left: 0;
+}
+
+p.judul{
+    font-size: 40px;
+    padding-top: 30px;
+    padding-left: 30px;
+    color: black;
+    margin-top: -5px;
+    background-color: #BDAC92;
+    padding-top: 250px;
+}
+
+div{
+    background-color: #BDAC92;
+}
+
+img.satu{
+    position: relative;
+    height: 340px;
+    width: 280px;
+    margin-left: 250px;
+    transform: translateY(-60px);
+    border-radius: 8px;
+}
+
+img.dua{
+    height: 300px;
+    width: 200px;
+    transform: translateY(-100px);
+    border-radius: 8px;
+}
+
+img.tiga{
+    height: 400px;
+    width: 280px;
+    margin-top: 50px;
+    border-radius: 8px;
+}
+
+img.empat{
+    height: 200px;
+    width: 280px;
+    margin-left: 250px;
+    transform: translateY(-310px);
+    border-radius: 8px;
+}
+
+img.lima{
+    height: 310px;
+    width: 200px;
+    transform: translateY(-240px);
+    border-radius: 8px;
+}
+
+img.enam{
+    height: 450px;
+    width: 280px;
+    border-radius: 8px;
+}
+
+img.tujuh{
+    height: 380px;
+    width: 280px;
+    margin-left: 250px;
+    transform: translateY(-310px);
+    border-radius: 8px;
+}
+
+img.delapan{
+    height: 200px;
+    width: 200px;
+    transform: translateY(-420px);
+    border-radius: 8px;
+}
+
+img.sembilan{
+    height: 200px;
+    width: 280px;
+    transform: translateY(-180px);
+    border-radius: 8px;
+}
+
+img.sepuluh{
+    height: 280px;
+    width: 280px;
+    margin-left: 250px;
+    transform: translateY(-335px);
+    border-radius: 8px;
+}
+
+img.sebelas{
+    height: 200px;
+    width: 200px;
+    transform: translateY(-525px);
+    border-radius: 8px;
+}
+
+img.duabelas{
+    height: 305px;
+    width: 280px;
+    transform: translateY(-180px);
+    border-radius: 8px;
+}
+
+img.tigabelas{
+    height: 280px;
+    width: 280px;
+    margin-left: 250px;
+    transform: translateY(-345px);
+    border-radius: 8px;
+}
+
+img.empatbelas{
+    height: 290px;
+    width: 200px;
+    transform: translateY(-525px);
+    border-radius: 8px;
+}
+
+img.limabelas{
+    height: 180px;
+    width: 280px;
+    transform: translateY(-290px);
+    border-radius: 8px;
+}
+
+img.enambelas{
+    height: 350px;
+    width: 280px;
+    margin-left: 250px;
+    transform: translateY(-345px);
+    border-radius: 8px;
+}
+
+img.tujuhbelas{
+    height: 280px;
+    width: 200px;
+    transform: translateY(-595px);
+    border-radius: 8px;
+}
+
+img.delapanbelas{
+    height: 180px;
+    width: 280px;
+    transform: translateY(-460px);
+    border-radius: 8px;
+}
+
+img.sembilanbelas{
+    height: 350px;
+    width: 280px;
+    margin-left: 250px;
+    transform: translateY(-344px);
+    border-radius: 8px;
+}
+
+img.duapuluh{
+    height: 200px;
+    width: 200px;
+    transform: translateY(-745px);
+    border-radius: 8px;
+}
+
+img.duapuluhsatu{
+    height: 180px;
+    width: 280px;
+    transform: translateY(-630px);
+    border-radius: 8px;
+}
+
+img.duapuluhdua{
+    height: 140px;
+    width: 200px;
+    margin-left: 535px;
+    transform: translateY(-520px);
+    border-radius: 8px;
+}
+
+img.duapuluhtiga{
+    height: 220px;
+    width: 200px;
+    transform: translateY(-890px);
+    border-radius: 8px;
+    margin-left: 535px;
+}
+
+img.duapuluhempat{
+    height: 200px;
+    width: 280px;
+    transform: translateY(-995px);
+    border-radius: 8px;
+    margin-left: 740px;
+}

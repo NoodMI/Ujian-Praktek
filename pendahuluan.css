@@ -130,6 +130,17 @@ p.b{
     background-color: #BDAC92;
 }
 
+p.c{
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 60px;
+    padding-right: 30px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+    background-color: #BDAC92;
+}
+
 #tujuan{
     background-color: #BDAC92;
     padding-top: 60px;
